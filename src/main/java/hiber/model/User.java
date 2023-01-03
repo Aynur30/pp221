@@ -51,16 +51,6 @@ public class User {
         return email;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                ", id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                '}';
-    }
-
 
     @Override
     public boolean equals(Object o) {
@@ -73,5 +63,15 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(car, id, firstName, lastName, email);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                ", id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

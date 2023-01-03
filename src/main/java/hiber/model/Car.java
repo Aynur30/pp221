@@ -27,14 +27,6 @@ public class Car {
         this.series = series;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "id=" + id +
-                ", model='" + model + '\'' +
-                ", series=" + series +
-                '}';
-    }
 
     public long getId() {
         return id;
@@ -79,5 +71,14 @@ public class Car {
     @Override
     public int hashCode() {
         return Objects.hash(id, model, series, user);
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", model='" + model + '\'' +
+                ", series=" + series +
+                '}';
     }
 }

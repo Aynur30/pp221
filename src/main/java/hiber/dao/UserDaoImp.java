@@ -16,12 +16,10 @@ public class UserDaoImp implements UserDao {
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-
     @Override
     public void add(User user) {
         sessionFactory.getCurrentSession().save(user);
     }
-
     @Override
     //@SuppressWarnings("unchecked")
     public List<User> listUsers() {
