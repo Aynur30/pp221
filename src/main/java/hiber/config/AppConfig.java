@@ -12,7 +12,6 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-
 import javax.sql.DataSource;
 import java.util.Properties;
 
@@ -24,6 +23,7 @@ import java.util.Properties;
 public class AppConfig {
 
    private Environment env;
+
    @Autowired
    public void setEnv(Environment env) {
       this.env = env;
