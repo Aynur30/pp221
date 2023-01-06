@@ -61,7 +61,9 @@ public class User {
             return false;
         }
         User user = (User) o;
-        return Objects.equals(car, user.car) && Objects.equals(id, user.id) && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email);
+        return Objects.equals(car, user.car) && Objects.equals(id, user.id) &&
+                Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) &&
+                Objects.equals(email, user.email);
     }
 
     @Override
